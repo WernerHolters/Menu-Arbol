@@ -359,8 +359,8 @@ int main() {
             case 11:
                 std::cout << a.getRoot()->nodeValue();
                 break;
-//            case 12:
-//                std::cout << n1->getLeft()->nodeValue();
+            case 12:
+                std::cout << n1->getLeft()->nodeValue();
         }
     } while (op != 0);
 
