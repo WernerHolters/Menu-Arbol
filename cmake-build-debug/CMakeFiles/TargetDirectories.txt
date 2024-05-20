@@ -1,0 +1,3 @@
+C:/Users/Werner Holters/CLionProjects/Menu Arbol/cmake-build-debug/CMakeFiles/Menu_Arbol.dir
+C:/Users/Werner Holters/CLionProjects/Menu Arbol/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Werner Holters/CLionProjects/Menu Arbol/cmake-build-debug/CMakeFiles/rebuild_cache.dir
