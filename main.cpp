@@ -272,18 +272,19 @@ Node* Binary_Tree::newTree(Node* left, element value, Node* right)
 /*-------------------------------------------------------------------------------*/
 void menu(){
     std::cout << "\n------------- M E N U ----------------\n";
-    std::cout << "1. Ingresar Valores Pantalla\n";
-    std::cout << "2. Mostrar Recorridos\n";
-    std::cout << "3. Vaciar Arbol\n";
-    std::cout << "4. Eliminar Valor\n";
-    std::cout << "5. Verificar si esta Vacio\n";
-    std::cout << "6. Dibujar Arbol\n";
-    std::cout << "7. Cantidad de Nodos\n";
-    std::cout << "8. Altura del Arbol\n";
-    std::cout << "9. Verificar si Existe Valor\n";
-    std::cout << "10. Usar Valores por Codigo\n";
-    std::cout << "11. Obtener Raiz\n";
-    std::cout << "Eliga una Opcion: \n";
+    std::cout << "1. Ingresar Valores Pantalla" << std::endl;
+    std::cout << "2. Mostrar Recorridos" << std::endl;
+    std::cout << "3. Vaciar Arbol" << std::endl;
+    std::cout << "4. Eliminar Valor" << std::endl;
+    std::cout << "5. Verificar si esta Vacio" << std::endl;
+    std::cout << "6. Dibujar Arbol" << std::endl;
+    std::cout << "7. Cantidad de Nodos" << std::endl;
+    std::cout << "8. Altura del Arbol" << std::endl;
+    std::cout << "9. Verificar si Existe Valor" << std::endl;
+    std::cout << "10. Usar Valores por Codigo" << std::endl;
+    std::cout << "11. Obtener Raiz" << std::endl;
+    std::cout << "12. Obtener Izquierda" << std::endl;
+    std::cout << "Eliga una Opcion:" << std::endl;
 }
 /*-------------------------------------------------------------------------------*/
 int main() {
@@ -293,13 +294,15 @@ int main() {
     int op;
     do
     {
-        menu(); std::cin >> op;
+        menu();
+        std::cin >> op;
         switch (op)
         {
             case 1:
                 int numero;
                 for (int i = 0; i < 5; ++i) {
-                    std::cout << "Ingrese Valor: ";    std::cin >> numero;
+                    std::cout << "Ingrese Valor: ";
+                    std::cin >> numero;
                     a.insertar(numero);
                 }
                 std::cout << '\n';
@@ -318,7 +321,8 @@ int main() {
                 break;
             case 4:
                 int deleted;
-                std::cout << "Ingrese Valor a Eliminar: ";  std::cin >> deleted;
+                std::cout << "Ingrese Valor a Eliminar: ";
+                std::cin >> deleted;
                 a.eliminar(deleted);
                 break;
             case 5:
@@ -338,7 +342,8 @@ int main() {
                 break;
             case 9:
                 int buscar;
-                std::cout << "Ingrese valor a buscar: ";    std::cin >> buscar;
+                std::cout << "Ingrese valor a buscar: ";
+                std::cin >> buscar;
                 std::cout << a.buscar(buscar)->nodeValue();
                 break;
             case 10:
